@@ -80,7 +80,10 @@ Landing page moderna e responsiva desenvolvida para promover serviços especiali
 ## 📞 Contato
 
 Desenvolvido por **Carlos Lopes "Sk8"** <br/>
-<a href="www.linkedin.com/in/carlos-lopes-b445aa201" > <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="react" width="40" height="40"/></a> <a href="https://github.com/CHCLopes"> <img src="https://images.icon-icons.com/2748/PNG/512/github_apps_platform_icon_176071.png" alt="react" width="40" height="40"/></a>
+[<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="react" width="40" height="40"/>](www.linkedin.com/in/carlos-lopes-b445aa201)
+[<img src="https://images.icon-icons.com/2748/PNG/512/github_apps_platform_icon_176071.png" alt="react" width="40" height="40"/>](https://github.com/CHCLopes)
+
+
 
 ## 📦 Instalação e Desenvolvimento
 
