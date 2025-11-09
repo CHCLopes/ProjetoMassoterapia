@@ -1,0 +1,83 @@
+@import "tailwindcss/theme.css" ;
+@import "tailwindcss/preflight.css" ;
+@import "tailwindcss/utilities.css" ;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+body {
+  font-family: 'Josefin Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.carousel-transition {
+  transition: transform 0.5s ease;
+}
+
+:root {
+  --primary: #07a0a4;
+  --secondary: #8dd3c7;
+  --accent: #07a0a4;
+  --light: #f1f8f6;
+  --dark: #2c3e3a;
+}
+
+.bg-primary { background-color: var(--primary); }
+.text-primary { color: var(--primary); }
+.border-primary { border-color: var(--primary); }
+
+.bg-secondary { background-color: var(--secondary); }
+.text-secondary { color: var(--secondary); }
+
+.bg-accent { background-color: var(--accent); }
+
+.text-accent, .cta-title { 
+  color: var(--accent);
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.text-accent2 { 
+  color: var(--light);
+  font-size: larger;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.bg-light { background-color: var(--light); }
+.text-light { color: var(--light); }
+
+.text-dark { color: var(--dark); }
+.bg-dark { background-color: var(--dark); }
+
+.hover\:bg-primary:hover { background-color: var(--primary); }
+.hover\:text-primary:hover { color: var(--primary); }
+
+.carousel-transition {
+  transition: transform 0.5s ease;
+}
+
+.card-carousel-img{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 0.5rem;
+}
+
+.card-carousel .card {
+  transition: transform 0.5s ease;
+}
+
+#JotFormIFrame-019a12e0fc20710682ac5ddc13b9f8512a4a {
+  width: '96%';
+  height: '600px';
+  border: 'none';
+  alignSelf: 'center';
+  display: 'block';
+  margin: '0 auto'
+}
