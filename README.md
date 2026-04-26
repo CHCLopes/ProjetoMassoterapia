@@ -28,6 +28,19 @@ Utilizado **React 19** tipado com **TypeScript** e estilizado através do **Tail
 | :---: | :---: |
 | 🌞 Design original da marca, focado em leveza e relaxamento. | 🌙 Contrastes profundos e imersivos para descanso visual. |
 |  ![LightMode](./public/images/printLightMode.jpg) | ![DarkMode](./public/images/printDarkMode.jpg) |
+| Seção Principal | Serviços | Sobre |
+|-----------------|----------|-------|
+| ![Hero](./public/images/menuComHero.jpg) | ![Serviços](./public/images/servicos.jpg) | ![Sobre](./public/images/sobre.jpg) |
+
+| Depoimentos | Footer |
+|-------------|--------|
+| ![Testimonials](./public/images/testimonials&CTA.jpg) | ![Footer](./public/images/footer.jpg) |
+
+### 📱 Mobile
+
+| Header, Hero, Menu e Serviços | Sobre e Depoimentos | CTA e Footer |
+|-----------------|----------|-------|
+| ![Header, Hero, Menu e Serviços](./public/images/printMobile1.jpg) | ![Sobre e Depoimentos](./public/images/printMobile2.jpg) | ![CTA e Footer](./public/images/printMobile3.jpg) |
 
 ---
 
