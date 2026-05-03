@@ -1,83 +1,63 @@
-@import "tailwindcss/theme.css" ;
-@import "tailwindcss/preflight.css" ;
-@import "tailwindcss/utilities.css" ;
+@import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --color-primary: #07a0a4;
+  --color-secondary: #8dd3c7;
+  --color-accent: #07a0a4;
+  --color-light: #f1f8f6;
+  --color-dark: #2c3e3a;
 
-body {
-  font-family: 'Josefin Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --animate-fade-in: fade-in 0.8s ease-out forwards;
+  --animate-slide-up: slide-up 0.8s ease-out forwards;
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 }
 
-.carousel-transition {
-  transition: transform 0.5s ease;
+@layer base {
+  body {
+    @apply font-sans antialiased text-dark bg-white dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300;
+    font-family: 'Josefin Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 }
 
-:root {
-  --primary: #07a0a4;
-  --secondary: #8dd3c7;
-  --accent: #07a0a4;
-  --light: #f1f8f6;
-  --dark: #2c3e3a;
+@layer utilities {
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 dark:bg-gray-900/80 dark:border-gray-700/50 shadow-sm;
+  }
+  
+  .glass-card {
+    @apply bg-white/50 backdrop-blur-sm border border-white/20 dark:bg-gray-800/50 dark:border-gray-700/50 shadow-lg;
+  }
+
+  /* Utility to keep elements hidden before animation */
+  .animate-on-scroll {
+    opacity: 0;
+  }
 }
 
-.bg-primary { background-color: var(--primary); }
-.text-primary { color: var(--primary); }
-.border-primary { border-color: var(--primary); }
-
-.bg-secondary { background-color: var(--secondary); }
-.text-secondary { color: var(--secondary); }
-
-.bg-accent { background-color: var(--accent); }
-
-.text-accent, .cta-title { 
-  color: var(--accent);
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+/* Scroll snap utilities */
+.snap-mandatory {
+  scroll-snap-type: x mandatory;
+}
+.snap-center {
+  scroll-snap-align: center;
 }
 
-.text-accent2 { 
-  color: var(--light);
-  font-size: larger;
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+/* Hide scrollbar for carousels but keep functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
-
-.bg-light { background-color: var(--light); }
-.text-light { color: var(--light); }
-
-.text-dark { color: var(--dark); }
-.bg-dark { background-color: var(--dark); }
-
-.hover\:bg-primary:hover { background-color: var(--primary); }
-.hover\:text-primary:hover { color: var(--primary); }
-
-.carousel-transition {
-  transition: transform 0.5s ease;
-}
-
-.card-carousel-img{
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border-radius: 0.5rem;
-}
-
-.card-carousel .card {
-  transition: transform 0.5s ease;
-}
-
-#JotFormIFrame-019a12e0fc20710682ac5ddc13b9f8512a4a {
-  width: '96%';
-  height: '600px';
-  border: 'none';
-  alignSelf: 'center';
-  display: 'block';
-  margin: '0 auto'
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
